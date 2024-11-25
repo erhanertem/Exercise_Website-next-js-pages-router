@@ -1,0 +1,1 @@
+pages folder is equavelant to app folder in app router setups
