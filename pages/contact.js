@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
 
   return (
     <div>
@@ -36,8 +36,7 @@ export default function Contact() {
           <select
             required
             name='subject'
-            className='px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm'
-          >
+            className='px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm'>
             <option value=''>Select subject...</option>
             <option value='booking-enquiry'>Booking enquiry</option>
             <option value='cabin-information'>Cabin information</option>

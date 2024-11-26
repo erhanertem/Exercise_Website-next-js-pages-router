@@ -13,6 +13,10 @@
 - Arrange folder structure based on Pages Router version
 - Explore static segments, sub segments, dynamic(params) routes
 - Navigation between routes
+- Explore layout solutions
+
+  - Root layout @ \_app.js
+  - Conditional sub layout @ \_app.js
 
 - </details>
 
@@ -29,10 +33,6 @@ N/A
 Issues:</strong>
 
 N/A
-
-#### <img src="https://raw.githubusercontent.com/erhanertem/erhanertem/main/icons/file.gif" width="30px"/>[The Wild Oasis Website](https://website-wild-oasis-erhan-ertem.vercel.app/)
-
-<img src="./screenshot.webp" width="600px"/>
 
 ---
 

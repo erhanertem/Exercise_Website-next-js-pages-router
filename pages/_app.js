@@ -22,9 +22,9 @@ export default function App({ Component, pageProps }) {
       <Header />
 
       {isCabinsRoute ? (
-        <DashboardLayout>
+        <CabinsLayout>
           <Component {...pageProps} />
-        </DashboardLayout>
+        </CabinsLayout>
       ) : (
         <DefaultLayout>
           <Component {...pageProps} />
@@ -38,7 +38,7 @@ function DefaultLayout({ children }) {
   return <main className='p-4'>{children}</main>;
 }
 
-function DashboardLayout({ children }) {
+function CabinsLayout({ children }) {
   return (
     <div className='flex'>
       <aside className='w-52 bg-gray-100 p-4 h-screen shadow-md'>
@@ -48,7 +48,9 @@ function DashboardLayout({ children }) {
               <a
                 href='/dashboard'
                 className='text-gray-700 hover:text-blue-600'>
-                Dashboard Home
+                Cabins Side Panel
+                <br />
+                <em>**This is an alternate layout**</em>
               </a>
             </li>
             <li>
