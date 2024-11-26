@@ -10,12 +10,14 @@ export default async function handler(req, res) {
     });
   }
 
-  const contactData = {
-    fullName: "Jonas",
-    email: "test@test.com",
-    subject: "booking",
-    message: "Hey there!",
-  };
+  // // DUMMY DATA
+  // const contactData = {
+  //   fullName: "Jonas",
+  //   email: "test@test.com",
+  //   subject: "booking",
+  //   message: "Hey there!",
+  // };
+  const contactData = JSON.parse(req.body); // Deserialize Json req data coming from the client in order to save it in the DB
 
   const { data, error } = await supabase.from("contact").insert([contactData]);
 

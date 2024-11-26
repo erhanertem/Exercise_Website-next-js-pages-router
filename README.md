@@ -25,7 +25,8 @@
   - Pre-render on server before sending to client - STATICALLY SERVER GENERATED
 - Fetch data with getServerSideProps(SSR)
 - Create API routes for data mutations
-- Form Submission handling
+
+  - Form Submission handling
 
 - </details>
 
