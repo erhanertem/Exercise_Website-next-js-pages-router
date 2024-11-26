@@ -19,7 +19,13 @@
   - Conditional sub layout @ \_app.js
 
 - Assign a favicon @ root/@ sub-route
-- Assign page title @root/@ sub-route
+- Assign page title @root/@ sub-route/@ params-route
+
+- Fetch data with getStaticProps(SSG)
+  - Pre-render on server before sending to client - STATICALLY SERVER GENERATED
+- Fetch data with getServerSideProps(SSR)
+- API routes
+- Form Submission handling
 
 - </details>
 
