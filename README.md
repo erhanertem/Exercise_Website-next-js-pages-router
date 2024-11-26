@@ -10,7 +10,9 @@
 
 <summary><img src="https://raw.githubusercontent.com/erhanertem/erhanertem/main/icons/education.gif" width="30px"/><strong>Key take-aways from this project...</strong></summary>
 
-- Arrange folder structure baed on Pages Router version
+- Arrange folder structure based on Pages Router version
+- Explore static segments, sub segments, dynamic(params) routes
+- Navigation between routes
 
 - </details>
 
