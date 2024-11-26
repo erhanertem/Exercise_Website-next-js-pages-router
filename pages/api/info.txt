@@ -1,0 +1,1 @@
+Unlike route handlers @ api router setupc(server actions), in pages router setups we got to create api folder. Its similar to server actions - backend development but with one important difference is that we do not have a server component architecture.

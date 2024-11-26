@@ -24,7 +24,7 @@
 - Fetch data with getStaticProps(SSG)
   - Pre-render on server before sending to client - STATICALLY SERVER GENERATED
 - Fetch data with getServerSideProps(SSR)
-- API routes
+- Create API routes for data mutations
 - Form Submission handling
 
 - </details>
