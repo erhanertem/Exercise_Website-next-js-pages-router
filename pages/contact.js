@@ -10,7 +10,6 @@ export default function Contact() {
     <>
       <Head>
         <title>Contact Us / The Wild Oasis</title>
-        <link rel='icon' href='logo.png' />
       </Head>
 
       <div>

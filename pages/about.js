@@ -9,7 +9,6 @@ export default function About() {
     <>
       <Head>
         <title>About / The Wild Oasis</title>
-        <link rel='icon' href='logo.png' />
       </Head>
 
       <div className='grid grid-cols-5 gap-x-24 gap-y-32 text-lg items-center'>

@@ -5,7 +5,6 @@ export default function Cabins() {
     <>
       <Head>
         <title>Cabins / The Wild Oasis</title>
-        <link rel='icon' href='logo.png' />
       </Head>
 
       <div>
