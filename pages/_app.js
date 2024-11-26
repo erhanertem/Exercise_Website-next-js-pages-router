@@ -1,9 +1,10 @@
-import "@/styles/globals.css";
-import Navigation from "@/components/Navigation";
-import Header from "@/components/Header";
+import Head from "next/head";
 import { useRouter } from "next/router";
-
 import { Josefin_Sans } from "next/font/google";
+import "@/styles/globals.css";
+
+import Header from "@/components/Header";
+import Navigation from "@/components/Navigation";
 
 const josefin = Josefin_Sans({
   subsets: ["latin"],
@@ -17,20 +18,27 @@ export default function App({ Component, pageProps }) {
   const isCabinsRoute = router.pathname.startsWith("/cabins");
 
   return (
-    <div
-      className={`${josefin.className} antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col relative`}>
-      <Header />
+    <>
+      <Head>
+        <title>The Wild Oasis</title>
+        <link rel='icon' href='logo.png' />
+      </Head>
 
-      {isCabinsRoute ? (
-        <CabinsLayout>
-          <Component {...pageProps} />
-        </CabinsLayout>
-      ) : (
-        <DefaultLayout>
-          <Component {...pageProps} />
-        </DefaultLayout>
-      )}
-    </div>
+      <div
+        className={`${josefin.className} antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col relative`}>
+        <Header />
+
+        {isCabinsRoute ? (
+          <CabinsLayout>
+            <Component {...pageProps} />
+          </CabinsLayout>
+        ) : (
+          <DefaultLayout>
+            <Component {...pageProps} />
+          </DefaultLayout>
+        )}
+      </div>
+    </>
   );
 }
 

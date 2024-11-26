@@ -18,6 +18,9 @@
   - Root layout @ \_app.js
   - Conditional sub layout @ \_app.js
 
+- Assign a favicon @ root/@ sub-route
+- Assign page title @root/@ sub-route
+
 - </details>
 
 &emsp;
