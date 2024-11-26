@@ -2,12 +2,19 @@ import CabinList from "@/components/CabinList";
 import { getCabins } from "@/lib/data-service";
 import Head from "next/head";
 
-// STATICALLY GENERATED
+// > INCREMENTAL STATICALLY GENERATED (SSG+ISR)
 // THIS CODE IS EXECUTED @ SERVER SIDE - WHATEVER IS RETURNED FROM THIS FUNCTION IS PASSED ONTO Cabins COMPONENT.
 export async function getStaticProps() {
   const cabins = await getCabins();
-  return { props: { cabins } }; // Return the fetched data as props onto Cabins component
+  return { props: { cabins }, revalidate: 3600 }; // Return the fetched data as props onto Cabins component
+  // NOTE: Instead of revalidate @ top level, in pages router setup, revalidate is provided within the props object
 }
+// // > STATICALLY GENERATED (SSG)
+// // THIS CODE IS EXECUTED @ SERVER SIDE - WHATEVER IS RETURNED FROM THIS FUNCTION IS PASSED ONTO Cabins COMPONENT.
+// export async function getStaticProps() {
+//   const cabins = await getCabins();
+//   return { props: { cabins } }; // Return the fetched data as props onto Cabins component
+// }
 
 export default function Cabins({ cabins }) {
   // console.log(cabins);
