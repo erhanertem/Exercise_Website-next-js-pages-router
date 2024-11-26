@@ -1,6 +1,16 @@
+import CabinList from "@/components/CabinList";
+import { getCabins } from "@/lib/data-service";
 import Head from "next/head";
 
-export default function Cabins() {
+// STATICALLY GENERATED
+// THIS CODE IS EXECUTED @ SERVER SIDE - WHATEVER IS RETURNED FROM THIS FUNCTION IS PASSED ONTO Cabins COMPONENT.
+export async function getStaticProps() {
+  const cabins = await getCabins();
+  return { props: { cabins } }; // Return the fetched data as props onto Cabins component
+}
+
+export default function Cabins({ cabins }) {
+  // console.log(cabins);
   return (
     <>
       <Head>
@@ -19,6 +29,8 @@ export default function Cabins() {
           own little home away from home. The perfect spot for a peaceful, calm
           vacation. Welcome to paradise.
         </p>
+
+        <CabinList cabins={cabins} />
       </div>
     </>
   );
